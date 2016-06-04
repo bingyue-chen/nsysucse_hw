@@ -3,13 +3,11 @@
 
 #include "Trace.h"
 
-#include <iostream>
-
 template<class T> class vector {
 
 public: 
 
-	vector(int n) : num(n), count(0){
+	vector(int n) : num(n) {
 		TRACE(dummy, string(__PRETTY_FUNCTION__));
 		this->valueArray = new T[this->num];
 	}
@@ -31,7 +29,7 @@ private:
 
 	T* valueArray;
 	int num;
-	int count;
+
 };
 
 #endif
