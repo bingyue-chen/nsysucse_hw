@@ -14,7 +14,7 @@ public:
 
 	~vector(){
 		TRACE(dummy, string(__PRETTY_FUNCTION__));
-		delete this->valueArray;
+		delete[] this->valueArray;
 	}
 
 	T& operator[](int n){

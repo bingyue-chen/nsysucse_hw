@@ -2,6 +2,7 @@
 #define __FORM_H_
 
 #include <iomanip>
+#include <iostream>
 
 class Form {
 public:
